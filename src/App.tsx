@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
 
-function App() {
+import "./scss/_index.scss"
+const App = () => {
   return (
-    <>
-    </>
+    <div>
+      
+    </div>
   );
-}
+};
 
 export default App;
