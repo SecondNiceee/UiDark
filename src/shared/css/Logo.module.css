@@ -1,0 +1,17 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12.45px;
+  cursor: pointer;
+}
+.container p:first-of-type {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 120%;
+  color: var(--black-text);
+}

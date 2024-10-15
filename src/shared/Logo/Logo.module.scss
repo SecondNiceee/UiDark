@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: 12.45px;
+    cursor: pointer;
+    p:first-of-type{
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 120%;
+        color: var(--black-text);
+    }
+}
