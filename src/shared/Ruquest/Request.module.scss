@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    .requestText:first-of-type{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+
+        /* line-height: 25px; */ 
+        line-height: 180%;
+        color: #252432;
+    }
+}

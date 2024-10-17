@@ -6,12 +6,17 @@
     --white-text : #fff;
     --white-card :   linear-gradient(137deg, #1c1c1c 0%, #050505 100%);
     --blue-card : #4e47ff;
+    --grey-card : #f5f8ff;
   }
 
 %section-header{
+
+
+
+
     font-family: var(--second-family);
     font-weight: 700;
-    font-size: 60px;
+    font-size: clamp(2.188rem, 1.53rem + 2.92vw, 3.75rem);
     line-height: 120%;
     color: #252432;
 }
@@ -23,14 +28,6 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-}
-@mixin bold-black-text($fs, $lh){
-    font-family: var(--second-family);
-    font-weight: 700;
-    font-size: $fs;
-    line-height: $lh;
-    text-align: center;
-    color: #252432;
 }
 [aria-label="burger-label"]{
     

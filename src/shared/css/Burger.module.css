@@ -76,6 +76,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  z-index: 300;
+  border: 1px solid black;
   width: 100%;
   text-align: center;
   top: 86px;

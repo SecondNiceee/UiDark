@@ -1,0 +1,16 @@
+.questions{
+    .container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .questions-title{
+        @extend %section-header;
+        grid-column: 1/6;
+        margin-left: 69px;
+        margin-top: 91px;
+    }
+    .question__accordion{
+        grid-column: 6/13;
+    }
+
+}

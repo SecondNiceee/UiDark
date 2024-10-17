@@ -1,11 +1,13 @@
 import React, { FC } from 'react';
 
 interface IImage{
-    imageName : string
+    imageName : string,
+    className? : string
 }
-const Image:FC<IImage> = ({imageName}) => {
+const Image:FC<IImage> = ({imageName, className = ''}) => {
+
     return (
-        <img src={`images/${imageName}`} alt="" />
+        <img className={className} src={`images/${imageName}`} alt="" />
     );
 };
 

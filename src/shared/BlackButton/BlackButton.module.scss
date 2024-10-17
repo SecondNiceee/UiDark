@@ -1,0 +1,18 @@
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--black-text);
+    padding: 18px 58px;
+    p:first-of-type{
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 16px;
+
+        /* line-height: 24px; */ 
+        line-height: 150%;
+        text-align: center;
+        color: var(--white-text);
+    }
+}

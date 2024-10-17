@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+
     transition: width 0.4s, height 0.4s;
     span{
         width: 100%;
@@ -53,6 +54,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 300;
+    border: 1px solid black;
     width: 100%;
     text-align: center;
     top: 86px;

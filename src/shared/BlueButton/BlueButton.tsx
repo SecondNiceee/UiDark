@@ -1,12 +1,12 @@
-import React, { FC } from 'react';
+import React, { CSSProperties, FC } from 'react';
 import cl from "./BlueButton.module.scss"
 
 interface IBlueButton{
-    props? : any
+    style? : CSSProperties
 }
-const BlueButton:FC<IBlueButton> = ({...props}) => {
+const BlueButton:FC<IBlueButton> = ({style , ...props}) => {
     return (
-        <button className={cl.container}>
+        <button style={style ?? {}} className={cl.container} {...props}>
             Sign up
         </button>
     );

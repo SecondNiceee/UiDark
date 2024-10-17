@@ -22,11 +22,17 @@
 
 
 
-@import "./values";
-@import "./components/header";
 @import '../../node_modules/scss-reset/reset';
 
+@import "./values";
+@import "./components/header";
+@import "./components/home";
+@import "./components/wedo";
+@import "./components/our-works";
+@import "./components/pricing";
+@import "./components/questions";
+
 .wrapper{
-    padding-top: 16px;
+    padding-top: 20px;
     background-color: #F5F5F5;
 }

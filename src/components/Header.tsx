@@ -6,7 +6,6 @@ import BurgerMenu from '../shared/Burger/BurgerMenu';
 
 const Header = () => {
     const [isOpen , setOpen] = useState<boolean>(false)
-
     return (
         <header className='header'>
             <div className="d-flex header container justify-content-between align-items-center">
@@ -30,4 +29,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default React.memo(Header);

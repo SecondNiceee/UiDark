@@ -1,0 +1,168 @@
+.pricing{
+    .container{
+        @extend %container;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(12, 1fr);
+        padding-top: clamp(4.625rem, 4.446rem + 0.89vw, 5.125rem);
+        padding-bottom: clamp(4.625rem, 2.304rem + 11.61vw, 11.125rem);
+        @media (max-width:768px) {
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
+    .pricing__left{
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/6;
+        @media (max-width:768px) {
+            &{
+                gap:20px;
+            }
+        }
+    }
+    .pricing__left-tblock{
+        margin-top: 27px;
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+        margin-top: clamp(0rem, -1.519rem + 4.22vw, 1.688rem);
+
+        h4{
+            @extend %section-header;
+            
+        }
+        p{
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            /* line-height: 21px; */ 
+            line-height: 150%;
+            color: #8987a1;
+        }
+        @media (max-width : 768px) {
+            align-items: center;
+            gap: 8;
+            h4{
+                text-align: center;
+            }
+            p{
+                max-width: 560px;
+                text-align: center;
+            }
+        }
+    }
+    .pricing__left-shedulBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+        border: 1px solid #2b2b2b;
+        border-radius: 20px;
+        background-color: white;
+        padding: 37px 26px 28px 26px;
+        margin-top: auto;
+        h4{
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: clamp(1.25rem, 0.463rem + 2.19vw, 2.125rem);
+
+            /* line-height: 41px; */ 
+            line-height: 120%;
+            color: #252432;
+        }
+    }
+    .pricing__right{
+        background-color: white;
+        padding: 23px;
+        border-radius: 20px;
+        grid-column: 6/13;
+        padding: 43px 23px 25px 23px;
+        display: flex;
+        flex-direction: column;
+        .pricing__right-title{
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: clamp(1.25rem, 0.463rem + 2.19vw, 2.125rem);
+
+            /* line-height: 36px; */ 
+            line-height: 120%;
+            color: #252432;
+            margin-left: 28px;
+            
+
+        }
+        .pricing__right-text{
+            
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            /* line-height: 21px; */ 
+            line-height: 150%;
+            color: #8987a1;
+
+            margin-left: 28px;
+            margin-top: 41px;
+
+        }
+        .pricing__right-requests{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 28px;
+            margin-top: 41px;
+            padding-right: 108px;
+            @media (max-width:1024px) {
+                &{
+                    padding-right: 0px;
+                }
+            }
+            @media (max-width:768px) {
+                &{
+                    justify-content: unset;
+                    gap:50px;
+                }
+            }
+            @media (max-width:480px) {
+                &{
+                    flex-direction: column;
+                }
+            }
+            
+        }
+        .pricing__right-requestsBlock{
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+    }
+    .pricing__right-priceBlock{
+        border-radius: 10px;
+        background: #f5f8ff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 41px;
+        padding: 28px 42px;
+        
+
+        .pricing__right-priceTextBlock{
+            display: flex;
+            gap: 8px;
+            align-items: baseline;
+            h2{
+                @extend %section-header;
+            }
+            p{
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 20px;
+                margin-left: 0;
+
+                /* line-height: 30px; */ 
+                line-height: 150%;
+                color: #8987a1;
+            }
+        }
+    }
+    
+}
