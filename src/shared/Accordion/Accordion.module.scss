@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    .accordionElement{
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #2b2b2b;
+        border-radius: 10px;
+        background-color: white;
+
+    }
+    .accordionTitle{
+        display: flex;
+        padding: 18px 30px 18px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .accordionDescription{
+        transition: 0.4s;
+        height: 0;
+        .descWrapper{
+            padding: 0px 50px 18px 30px;
+        }
+        &.opened{
+            height: auto;
+        }
+    }
+}

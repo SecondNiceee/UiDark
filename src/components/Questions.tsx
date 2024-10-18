@@ -1,13 +1,37 @@
 import React from 'react';
-import Accordion from '@mui/material/Accordion';
-import { AccordionDetails, AccordionSummary, Typography } from '@mui/material';
-import ExpandIcon from '../shared/ExpandIcon/ExpandIcon';
+import Accordion from '../shared/Accordion/Accordion';
+
+
+
+export type TAccordionElement = {
+    a : React.ReactNode,
+    b : React.ReactNode
+}
+export type TAccordionList = TAccordionElement[]
+
+const accordionList:TAccordionList = [
+    {
+        a : <p className='accordionTitle'> How can I contact Inkyy Team?</p>,
+        b : <p className='accordionDescription'>You can reach us through our contact form on our website or by emailing us at <span>hello@inkyy.com</span> We typically respond within 24 hours.</p>
+    },
+    {
+        a : <p className='accordionTitle'>What services do you offer?</p>,
+        b : <p className='accordionDescription'>There's some text here about the second accordion. </p>
+    },
+    {
+        a : <p className='accordionTitle'>Do you provide website maintenance services?</p>,
+        b : <p className='accordionDescription'>There's some text here about the third accordion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat id laborum tempore blanditiis voluptates recusandae, minus quam repudiandae itaque dolore quae commodi voluptas, assumenda suscipit possimus voluptatibus corrupti deserunt voluptate.</p>
+    },
+    {
+        a : <p className='accordionTitle'>How long does it take to design and develop a website?</p>,
+        b : <p className='accordionDescription'>There's some text here about the fourth accordion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat id laborum tempore blanditiis voluptates recusandae, minus quam repudiandae itaque dolore quae commodi voluptas, assumenda suscipit possimus voluptatibus corrupti deserunt voluptate.</p>
+    },
+    {
+        a : <p className='accordionTitle'>Do you require a deposit for projects?</p>,
+        b : <p className='accordionDescription'>There's some text here about the five accordion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat id laborum tempore blanditiis voluptates recusandae, minus quam repudiandae itaque dolore quae commodi voluptas, assumenda suscipit possimus voluptatibus corrupti deserunt voluptate.</p>
+    }
+]
 const Questions = () => {
-    const [expanded, setExpanded] = React.useState<string | false>(false);
-    const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false);
-    };
 
     return (
         <section className='questions'>
@@ -15,19 +39,9 @@ const Questions = () => {
                 <h1 className='questions-title'>
                     Frequently Asked Questions
                 </h1>
-                <Accordion className='question__accordion' onChange={handleChange('panel1')} expanded = {expanded === "panel1"} >
-                    <AccordionSummary className='question__accordion-header' expandIcon = {<ExpandIcon />} >
-                        <Typography className='question__accordion-title'>
-                                How can I contact Inkyy Team?
-                        </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails className='question__accordion-description'>
-                        <Typography>
-                            You can reach us through our contact form on our website or by emailing us at <span>hello@inkyy.com</span> We typically respond within 24 hours.
-                        </Typography>
-                    </AccordionDetails>
-                </Accordion>
+                <Accordion className='question__accordion' accordions={accordionList} />
             </div>
+            <div className="line"></div>
         </section>
     );
 };
