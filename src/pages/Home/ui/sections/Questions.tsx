@@ -1,5 +1,5 @@
 import React from 'react';
-import Accordion from '../shared/Accordion/Accordion';
+import Accordion from '../../../../shared/Accordion/Accordion';
 
 
 

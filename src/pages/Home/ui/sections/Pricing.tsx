@@ -1,7 +1,7 @@
 import React from 'react';
-import BlueButton from '../shared/BlueButton/BlueButton';
-import Request from '../shared/Ruquest/Request';
-import Image from '../shared/Image';
+import BlueButton from '../../../../shared/BlueButton/BlueButton';
+import Request from '../../../../shared/Ruquest/Request';
+import Image from '../../../../shared/Image';
 
 const Pricing = () => {
     return (

@@ -1,9 +1,8 @@
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
-import Slide from "../shared/Slide/Slide";
+import Slide from "../../../../shared/Slide/Slide";
 import Rating from "./Rating";
 const OurWorks = () => {
   return (
@@ -20,7 +19,7 @@ const OurWorks = () => {
             >
               <path
                 d="M15 4H1M1 4L4 7M1 4L4 1"
-                stroke="#252432"
+                stroke="white"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -43,8 +42,9 @@ const OurWorks = () => {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
+                fill="white"
                 d="M1 4L15 4M15 4L12 1M15 4L12 7"
-                stroke="#252432"
+                stroke="white"
                 stroke-width="1.5"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -52,9 +52,6 @@ const OurWorks = () => {
             </svg>
           </div>
         </div>
-
-        
-        
         <Swiper
           className="my-swiper"
           modules={[Navigation]}

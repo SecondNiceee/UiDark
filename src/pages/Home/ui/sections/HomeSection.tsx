@@ -1,6 +1,6 @@
 import React from 'react';
-import BlackButton from '../shared/BlackButton/BlackButton';
-import Image from '../shared/Image';
+import BlackButton from '../../../../shared/BlackButton/BlackButton';
+import Image from '../../../../shared/Image';
 
 const Home = () => {
     return (

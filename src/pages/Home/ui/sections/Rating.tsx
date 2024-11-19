@@ -1,5 +1,4 @@
-import React from 'react';
-import Image from '../shared/Image';
+import Image from '../../../../shared/Image';
 
 const imagesNames = [
     'icon1.png',

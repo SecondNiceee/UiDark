@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import Logo from '../shared/Logo/Logo';
-import BlueButton from '../shared/BlueButton/BlueButton';
-import Burger from '../shared/Burger/Burger';
-import BurgerMenu from '../shared/Burger/BurgerMenu';
+import Logo from '../../shared/Logo/Logo';
+import BlueButton from '../../shared/BlueButton/BlueButton';
+import Burger from '../../shared/Burger/Burger';
+import BurgerMenu from '../../shared/Burger/BurgerMenu';
+import "./_Header.scss";
 
 const Header = () => {
     const [isOpen , setOpen] = useState<boolean>(false)

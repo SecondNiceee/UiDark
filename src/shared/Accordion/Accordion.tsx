@@ -1,5 +1,5 @@
-import React, { FC, useCallback, useState } from 'react';
-import { TAccordionList } from '../../components/Questions';
+import  { FC, useCallback, useState } from 'react';
+import { TAccordionList } from '../../pages/Home/ui/sections/Questions';
 import cl from "./Accordion.module.scss"
 import AccordionElement from './AccordionElement';
 

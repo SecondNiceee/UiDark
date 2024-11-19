@@ -1,8 +1,10 @@
+@import "../../app/styles/index";
 .header{
     .container{
         @extend %container;
         z-index: 20;
         position: relative;
+        padding-top: 20px;
         
     }
     .left{

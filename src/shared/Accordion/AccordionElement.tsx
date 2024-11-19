@@ -1,6 +1,6 @@
 import React, { FC, SetStateAction, useRef } from "react";
 import cl from "./Accordion.module.scss"
-import { TAccordionElement } from "../../components/Questions";
+import { TAccordionElement } from "../../pages/Home/ui/sections/Questions";
 import ExpandIcon from "../ExpandIcon/ExpandIcon";
 
 

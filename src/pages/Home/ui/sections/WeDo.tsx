@@ -1,6 +1,8 @@
 
-import Icon from '../shared/Icon/Icon';
-import Image from '../shared/Image';
+
+import Icon from '../../../../shared/Icon/Icon';
+import Image from '../../../../shared/Image';
+
 
 const WeDo = () => {
     return (
